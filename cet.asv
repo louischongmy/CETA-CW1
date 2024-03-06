@@ -72,34 +72,21 @@ Edfsumg=logcalc(Edsumg);
 Edsumg1=Edlosg+Edu1g+Edb1g+Edub2g+Edbu2g+Edubu3g+Edbub3g;
 Edfsumg1=logcalc(Edsumg1);
 
-% graph plotting part 
-%2.4GHz
-plot(rxv,Edflos)
+% graph plotting part
+plot(rxv,Edflosg)
 hold on
-plot(rxv,Edfu1)
-plot(rxv,Edfb1)
-plot(rxv,Edfub2)
-plot(rxv,Edfbu2)
-plot(rxv,Edfubu3)
-plot(rxv,Edfbub3)
-plot(rxv,Edfubub4)
-plot(rxv,Edfbubu4)
-plot(rxv,Edfsum,'r')
-plot(rxv,Edfsum1,'k')
-%uncomment these and comment the others above for 24GHz
+plot(rxv,Edfu1g)
+plot(rxv,Edfb1g)
+plot(rxv,Edfub2g)
+plot(rxv,Edfbu2g)
+plot(rxv,Edfubu3g)
+plot(rxv,Edfbub3g)
+plot(rxv,Edfubub4g)
+plot(rxv,Edfbubu4g)
+plot(rxv,Edfsumg,'r')
+plot(rxv,Edfsumg1,'k')
+%u
 xlabel('Line Segment "pq"/m'),ylabel('E-field/dB')
-%plot(rxv,Edflosg)
-%hold on
-%plot(rxv,Edfu1g)
-%plot(rxv,Edfb1g)
-%plot(rxv,Edfub2g)
-%plot(rxv,Edfbu2g)
-%plot(rxv,Edfubu3g)
-%plot(rxv,Edfbub3g)
-%plot(rxv,Edfubub4g)
-%plot(rxv,Edfbubu4g)
-%plot(rxv,Edfsumg,'r')
-%plot(rxv,Edfsumg1,'k')
 grid on
 title('graph of E-field agianst Line segment')
 legend('los','1 bounce upper','1 bounce bottom','2 bounce ub','2 bounce bu','3 bounce ubu','3 bounce bub', ...
